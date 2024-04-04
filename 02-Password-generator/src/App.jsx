@@ -38,10 +38,10 @@ function App() {
   return (
     <>
       <div>
-        <div className='text-center text-3xl p-4 font-semibold text-slate-200 bg-indigo-950 max-w-2xl mx-auto rounded'>
+        <div className='text-center text-3xl p-4 mb-5 font-semibold text-slate-200 bg-indigo-950 max-w-2xl mx-auto rounded'>
           <h1>Dumb Password Generator</h1>
         </div>
-        <div className='w-full max-w-3xl mx-auto shadow-md text-center bg-slate-500 p-6 rounded'>
+        <div className='drop-shadow-xl w-full max-w-3xl mx-auto shadow-md text-center bg-slate-500 p-6 rounded'>
           <div className='flex justify-center flex-wrap'>
             <input ref={passwordRef} className='text-orange-500 text-xl p-2 rounded outline-none w-3/4' type="text" placeholder='Generating..' value={password} readOnly/>
             <button onClick={copyPasswordToClipboard} className='text-2xl text-white bg-blue-700 hover:bg-blue-500 p-2 ml-1 rounded outline-none font-medium'>Copy</button>
