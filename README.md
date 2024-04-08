@@ -3,5 +3,5 @@
 Here Are the live links !!
 
 1. [Dumb Color Changer](https://dumb-color-changer.vercel.app/)
-2. [Dumb Password Gener](https://chai-aur-react-project.vercel.app/)
+2. [Dumb Password Generator](https://chai-aur-react-project.vercel.app/)
 
