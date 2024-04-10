@@ -2,13 +2,15 @@ import React, { useId } from "react";
 
 // Here I am creating an input box component
 function InputBox({
-  // What is this I don't Know this
+  // Here these are the props
   label,
   amount,
   onAmountChange,
   onCurrencyChange,
+
+  // This is the variable that gives me different option
   currencyOptions = [],
-  selectCurrency = "usd",
+  selectCurrency,
   amountDisable = false,
   currencyDisable = false,
   className = "",
@@ -17,7 +19,6 @@ function InputBox({
   const amountInputId = useId();
 
   return (
-    // This CSS looks different because in this CSS user will apply there CSS
     <div className={`bg-white p-3 rounded-lg text-sm flex ${className}`}>
       {/* Here This is input box */}
       <div className="w-1/2">
@@ -52,7 +53,7 @@ function InputBox({
           disabled={currencyDisable}
         >
           {currencyOptions.map((currency) => {
-            // Whenever you are using loop in the jsx you have to use key attribute because loop will slow the performance of the React.
+            // Whenever you are using loop in the jsx you have to use "key" attribute because loop will slow the performance of the React.
             return (
               <option key={currency} value={currency}>
                 {currency}
